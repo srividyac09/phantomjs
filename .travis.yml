@@ -8,4 +8,5 @@ install:
   - sudo apt-get install -y "^libxcb.*" libx11-xcb-dev libglu1-mesa-dev libxrender-dev libxi-dev
 
 script:
-  - ./configure
+  - export QT_QPA_PLATFORM=offscreen
+  - cd phantomjs && git checkout 2.1.1 && git submodule init && git submodule update && ./build.py -c
