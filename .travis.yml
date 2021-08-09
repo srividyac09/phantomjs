@@ -3,4 +3,5 @@ arch:
   - ppc64le
 language: python
 script:
+  - git checkout 2.1.1
   - python build.py 
