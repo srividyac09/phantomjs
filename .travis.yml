@@ -2,13 +2,13 @@ dist: focal
 arch:
   - ppc64le
 language: python
-before_install:
+install:
   - sudo apt-get update -y
   - sudo apt-get install -y build-essential g++ flex bison gperf \
         ruby perl libsqlite3-dev libfontconfig1-dev libicu-dev \
         libfreetype6 libssl-dev libpng-dev libjpeg-dev python \
         libx11-dev libxext-dev git
- - sudo apt-get install -y "^libxcb.*" libx11-xcb-dev libglu1-mesa-dev libxrender-dev libxi-dev
+  - sudo apt-get install -y "^libxcb.*" libx11-xcb-dev libglu1-mesa-dev libxrender-dev libxi-dev
 
 script:
   - ./configure
