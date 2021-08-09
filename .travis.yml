@@ -2,7 +2,7 @@ dist: focal
 arch:
   - ppc64le
 language: python
-before-install:
+before_install:
   - sudo apt-get update -y
   - sudo apt-get install -y build-essential g++ flex bison gperf \
         ruby perl libsqlite3-dev libfontconfig1-dev libicu-dev \
