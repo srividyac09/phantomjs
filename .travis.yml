@@ -7,4 +7,5 @@ install:
   - sudo apt-get install -y build-essential g++ flex bison ruby perl libsqlite3-dev libfontconfig1-dev libicu-dev libfreetype6 libssl-dev libpng-dev libjpeg-dev python libx11-dev libxext-dev 
   - sudo apt-get install -y "^libxcb.*" libx11-xcb-dev libglu1-mesa-dev libxrender-dev libxi-dev
   - sudo apt-get install qt5-default
-
+script:
+  - ./configure
