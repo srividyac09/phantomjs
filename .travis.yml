@@ -10,4 +10,4 @@ install:
 
 script:
   - export QT_QPA_PLATFORM=offscreen
-  - ./configure
+  - ./build.py
